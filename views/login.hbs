@@ -1,0 +1,59 @@
+ {{>navbar}}
+
+  <h3 class="FAQ">Log-In</h3>
+
+  <h5 class="sub">We will be happy to help you!</h5>
+<div class="form">
+<form id="login" method="POST">
+
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" name="E_mail" required >
+    <span id="emailValidation"></span>
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+    <span id="passwordValidation"></span>
+  </div>
+  <button type="submit" class="btn btn-primary" onclick="loginUser(event)"> Submit</button>
+  </form>  
+ 
+  <script>
+    async function loginUser(event) {
+  event.preventDefault(); // Prevent the default form submission
+
+  const E_mail = document.getElementById('email').value;
+  const password = document.getElementById('password').value;
+
+  try {
+    const response = await fetch('http:///localhost:4000/login', { // Replace with your actual login API URL
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({ E_mail, password })
+    });
+
+    if (!response.ok) {
+      // Handle HTTP errors
+      document.getElementById('emailValidation').textContent = 'Invalid credentials. Please try again.';
+      document.getElementById('passwordValidation').textContent = '';
+      return;
+    }
+
+    const result = await response.json(); // Attempt to parse JSON
+
+    // Redirect to some page on success
+    window.location.href = '/web/otpVerify'; // Replace with your actual redirect URL
+  } catch (error) {
+    // Handle errors like network issues or JSON parsing errors
+    console.error('An error occurred:', error);
+    document.getElementById('emailValidation').textContent = 'An unexpected error occurred. Please try again later.';
+    document.getElementById('passwordValidation').textContent = '';
+  }
+}
+
+  </script>
+  

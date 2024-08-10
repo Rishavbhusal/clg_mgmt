@@ -1,0 +1,20 @@
+
+  <h3 class="FAQ">Log-In</h3>
+
+  <h5 class="sub">We will be happy to help you!</h5>
+<div class="form">
+<form id="login" action="/" method="post">
+
+   <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" name="E_mail" required >
+    <span id="emailValidation"></span>
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Password" name="password" required>
+    <span id="passwordValidation"></span>
+  </div>
+  <button type="submit" class="btn btn-primary" onclick=loginUser()> Submit</button>
+  </form>  

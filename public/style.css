@@ -1,0 +1,557 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.rishav {
+  color: red;
+}
+.btn {
+  width: 100%;
+}
+.button {
+  padding: 22px;
+}
+#box_1 {
+  display: none;
+}
+#box_2 {
+  display: none;
+}
+#box_3 {
+  display: none;
+}
+#box_4 {
+  display: none;
+}
+.boxes {
+  display: block;
+  border: 2px solid darkgrey;
+  border-radius: 8px;
+  background: #f7eaea;
+  color: brown;
+  height: 5rem;
+}
+.FAQ {
+  display: flex;
+  justify-content: center;
+  font-family: fantasy;
+  margin-top: 4rem;
+}
+.sub {
+  display: flex;
+  justify-content: center;
+  font-family: monospace;
+  margin: 32px;
+  color: red;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+}
+
+.account {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.signup {
+  margin-top: 10px;
+}
+
+/* navbar */
+
+/* home-bg css */
+
+.home video {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: brightness(0.5);
+}
+
+.home img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: brightness(0.5);
+}
+.home_text1 {
+  position: absolute;
+  top: 22%;
+  color: #fff;
+  padding: 20px;
+  margin-top: 45px;
+}
+.home_heading1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 11px;
+}
+
+.btn {
+  width: 13%;
+}
+
+.home_h1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+  text-transform: uppercase;
+  font-weight: bold;
+
+  font-size: 3.5rem;
+}
+.home_h1 h1 {
+  font-size: 3.5rem;
+}
+.h_texth_p {
+  display: flex;
+  font-family: fantasy;
+  font-size: xx-large;
+  justify-content: center;
+}
+
+.tu_content {
+  margin: 32px;
+  font-size: larger;
+  font-family: math;
+}
+
+.home_img1 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: brightness(0.5);
+  margin-top: 4rem;
+}
+
+.h_heading2 {
+  position: absolute;
+
+  transform: translate(0, -41rem);
+
+  color: #fff;
+  padding: 20px;
+}
+.tu_all_contain {
+  margin-top: 5rem;
+}
+
+.programs {
+  width: 81vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  transform: translate(10px, -9rem);
+}
+
+.cs_it {
+  margin-top: 8rem;
+}
+/* About page */
+
+.about_img1 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: brightness(0.5);
+}
+.abt_img_text1 {
+  position: absolute;
+  top: 22%;
+  color: #fff;
+  padding: 20px;
+  margin-top: 45px;
+}
+.about_h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 11px;
+}
+.abt_img_text1 p {
+  font-size: 21px;
+}
+.abt_img_text2 {
+  position: absolute;
+
+  margin-top: 22px;
+  color: black;
+  padding: 20px;
+  /* margin-top: 45px; */
+}
+.about_h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 60px;
+  margin-bottom: 11px;
+}
+.abt_img_text1 p {
+  font-size: 21px;
+}
+
+.about_img3 img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  filter: brightness(0.5);
+  margin-top: 17rem;
+}
+.abt_img_text3 {
+  position: absolute;
+
+  transform: translate(0, -41rem);
+
+  color: #fff;
+  padding: 20px;
+}
+
+.text-4 {
+  margin-top: 6rem;
+  margin-left: 3rem;
+  padding: 90px;
+  margin-right: 3rem;
+  border: 5px solid black;
+  background-color: lightgrey;
+}
+
+.border_title {
+  display: flex;
+  justify-content: center;
+  margin-top: 47px;
+}
+.border_title p {
+  margin-top: 22px;
+  padding: 8px;
+}
+
+/* Meet our team */
+
+.team {
+  display: flex;
+  justify-content: center;
+  margin-top: 72px;
+  margin-bottom: 72px;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+/* Display the columns below each other instead of side by side on small screens */
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+/* Add some shadows to create a card effect */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+/* Some left and right padding inside the container */
+.container {
+  padding: 0 16px;
+}
+
+/* Clear floats */
+.container::after,
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+/* custom css */
+
+.container {
+  margin-top: 41px;
+}
+.card {
+  width: 62%;
+}
+
+/* footer */
+.container1 {
+  max-width: 1170px;
+  margin: auto;
+}
+.row1 {
+  display: flex;
+  flex-wrap: nowrap;
+}
+ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #24262b;
+  padding: 70px 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 300;
+  color: #bbbbbb;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  margin: 0 10px 10px 0;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: all 0.5s ease;
+  font-size: 30px;
+}
+
+.footer-col .social-links a:hover {
+  color: black;
+  background-color: #fff;
+}
+
+.logoo {
+  display: flex;
+  width: 90vw;
+  justify-content: flex-end;
+  transform: translate(-20px, -6rem);
+}
+
+/* responsive */
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+/* custom css */
+.logoo {
+  mix-blend-mode: color;
+}
+
+.logoo img {
+  width: 10rem;
+}
+
+/* courses */
+/* bca */
+.bca_img1 img {
+  position: relative;
+  width: 100%;
+  filter: brightness(0.6);
+}
+.bca_text1 {
+  position: absolute;
+  color: #fff;
+
+  top: 40%;
+}
+.bca_h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 41px;
+  margin-bottom: 11px;
+  margin-left: 31px;
+}
+.bca_p {
+  font-size: 21px;
+  margin-left: 32px;
+  margin-right: 32px;
+}
+.bca_course {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0%;
+  animation: HeroBanner_flyFromRight__B7HV0 0.8s ease;
+
+  margin-top: 9rem;
+  margin-left: 32px;
+}
+.bca_credit_hrs {
+  font-size: clamp(24px, 1.8vw, 32px);
+  font-weight: 600;
+
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin-left: 32px;
+}
+
+.duration {
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 300;
+  margin-left: 5rem;
+}
+.duration1 {
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 300;
+  font-size: 2rem;
+}
+.bca_container {
+  text-transform: uppercase;
+  font-weight: bold;
+
+  margin-bottom: 11px;
+  margin-left: 31px;
+  text-align: center;
+
+  padding: 32px;
+  font-size: 64px;
+}
+.scolar_img {
+  width: 50%;
+  position: relative;
+}
+#bca_scholarship {
+  display: flex;
+  filter: brightness(0.8);
+}
+.bca_scohlor_h1 {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 41px;
+  margin-bottom: 48px;
+  margin-left: 31px;
+}
+
+.bca_link img {
+  /* max-width: -webkit-fill-available; */
+  position: relative;
+  filter: brightness(0.4);
+  width: 100%;
+}
+.bca_text2 {
+  position: absolute;
+  width: 78%;
+  transform: translate(10px, -49rem);
+  color: #fff;
+}
+.bca_a {
+  margin-left: 32px;
+  margin-top: 11rem;
+}
+.bca_a a {
+  font-size: 28px;
+  color: #ffff;
+}
+/* .location{
+  order: 2px solid red;
+  width: 47%;
+  transform: translate(115%, -55%);
+ 
+} */
+.contact_1{
+  transform: translate(28px, 20vh);
+
+  width: 45%;
+
+}
+
+.btn-primary{
+  width: 84px;
+
+}
+
+.bca_scohlor_h2{  text-transform: uppercase;
+font-weight: bold;
+font-size: 41px;
+margin-top: 44px;
+    margin-bottom: 35px;
+
+margin-left: 31px;
+}
+.bca_talla{
+  font-size: 27px;
+  margin: 33px;
+
+}
+.bca_talla_p{
+  font-size: 25px;
+  margin-left: 34px;
+
+
+}
+
+         /* grid */
+  .p_frame{
+    display: flex;
+    justify-content: end;
+
+  }

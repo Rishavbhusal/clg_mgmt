@@ -1,0 +1,33 @@
+  <form id="otp-form" action="/verify-otp" method="POST">
+        <div class="mb-3">
+            <label for="otp" class="form-label"> Enter OTP</label>
+            <input type="text" class="form-control" id="otp" placeholder="Enter OTP" name="otp" required>
+            <span id="otpValidation"></span>
+            <input type="hidden" id="otp-email" name="E_mail">
+        </div>
+        <button type="submit" class="btn btn-primary"
+         onclick=verifyOtp() >Verify OTP</button>
+    </form>
+
+<script>
+
+ async function verifyOtp(event) {
+            event.preventDefault();
+            const response = await fetch('/verify-otp', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({
+                    E_mail: document.getElementById('otp-email').value,
+                    otp: document.getElementById('otp').value
+                })
+            });
+
+            if (response.ok) {
+                alert('Login successful');
+            } else {
+                alert('OTP verification failed');
+}
+        }
+        </script>

@@ -1,0 +1,58 @@
+{{>navbar}}
+ <div class="home">
+
+    {{#each data}}
+<video width="100%" loop muted autoplay class="bg">
+    <source src={{this.video}} >
+</video>
+ </div>
+<div class="home_text1">
+    <div class="home_heading1">
+        <h2>{{this.title}}</h2>
+</div>
+        <div class="home_p1">
+        <p>{{this.heading}}</p>
+    </div>
+<button type="button" class="btn btn-dark" onclick="openWindow()">Learn More </button>
+</div>
+<a href="/web/about"></a>
+<div class="tu_all_contain">
+<div class="home_h1">
+<h1>{{this.title}}</h1>
+</div>
+<div class="h_texth_p">
+<br>Nepathya College is an affiliate of Trivuwan University 
+    </br>
+    </div>
+
+
+<p class="tu_content">All Trivuwan University programs offered through nepathya College are approved by the Ministry of Education, Government of Nepal.Tribhuvan University (TU; Nepali: त्रिभुवन विश्वविद्यालय) is a public university located in Kirtipur, Kathmandu, Nepal. Established in 1959, TU is the oldest and the largest university in Nepal. It offers 1,000 undergraduate and 500 postgraduate programs across a wide range of disciplines. Additionally, the institution has 62 constituent campuses and over 1,080 affiliated colleges across the country.
+
+
+</p>
+</div>
+
+<div class="home_img1">
+    <img src="/assets/course.avif" alt="">
+    
+</div>
+<div class="h_heading2">
+ <h2 >CHOOSE YOUR PROGRAM</h2>
+ <br>Discover your passion with a range of undergraduate and graduate programs in IT .</br>
+Find the program that aligns with your interests and career goals. Take the first step towards a successful future.</p>
+<div class="programs">
+    <div class="bca">
+    <h1 id="BCA">BCA</h1>
+    <a href="/web/bca">view program</a>
+    </div>
+    <div class="cs_it">
+    <h1 id="CS-IT">CS-IT</h1>
+    <a href="/web/cs-it">view program</a>
+</div>
+    </div>
+    {{/each}}
+</div>
+
+
+
+{{>footer}}

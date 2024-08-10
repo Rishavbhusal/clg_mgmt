@@ -1,0 +1,12 @@
+ 
+
+
+
+
+
+ function showOtpForm()
+     {
+    console.log("login otp")
+      document.getElementById('login-form').style.display = 'none';
+      document.getElementById('otp-form').style.display = 'block';
+    }

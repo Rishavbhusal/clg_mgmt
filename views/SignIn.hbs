@@ -1,0 +1,42 @@
+{{>navbar}}
+  <h3 class="FAQ">Sign-Up</h3>
+
+  <h5 class="sub">We will be happy to help you!</h5>
+    <form id="form" action="/register" method="post" >
+<div class="form" > 
+  <div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">FirstName</label >
+    <input type="text" class="form-control" id="firstname" aria-describedby="emailHelp" placeholder="Enter your firstname" name="firstName" required>
+    <span id="fullnameValidator"></span>
+    <label for="exampleInputEmail1" class="form-label">LastName</label>
+    <input type="text" class="form-control" id="lastname" aria-describedby="emailHelp" placeholder="Enter your lastname"  name="lastName" required>
+    <span id="lastnameValidator"></span>
+    <label for="exampleInputEmail1" class="form-label">E-mail</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter your email" name="E_mail" required >
+    <span id="emailValidation"></span>
+    
+    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPhone1" class="form-label">Phone</label>
+    <input type="number" class="form-control" id="phonenumber" placeholder="Phone Number" name="phone" required>
+    <span id="phoneValidation"></span>
+  </div>
+  <div class="mb-3">
+   
+    <label for="exampleInputPassword1"  class="form-label">Password</label>
+    <input type="password" class="form-control" id="password" placeholder="Enter Your Password" name="password" required >
+    
+    <span id="passwordValidation"></span>
+  </div>
+<button type="submit" class="btn btn-primary" value="Register" id="submit1" onclick=registerUser()> Submit</button>
+</div>
+</div>
+</form> 
+
+
+
+<p class="account">Already have an account? 
+<a href="/web/login"><button type="submit" class="btn btn-primary" >Log-In</button></a></p>
+
